@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../Roboto/Roboto-Regular.ttf');
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+}
+
+.header, .footer, .nav, .sidebar, .content-area, .products, .productPreview {
+    padding: 20px;
+    border: 1px solid #cccccc;
+    margin: 5px;
+    border-radius: .3em;
+}
+
+.header {
+    background: #aa00bb;
+}
+
+.hide {
+    display: none;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav {
+    background: #00ffcc;
+}
+
+.nav-side {
+    display: flex;
+    flex-direction: column;
+    flex: 8 8 400px;
+}
+
+.productPreview {
+    flex: 2 2 200px;
+    background: #caf0fc;
+}
+
+.item, .item2 {
+    flex: 10 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    background-color: #00ffcc;
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.item2 {
+    margin: 10px;
+    background-color: #5900ff;
+}
+
+.image {
+    width: 100px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.nav-content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.sidebar {
+    flex: 2 3 200px;
+    background: #ac0c0c;
+}
+
+.content-area {
+    flex: 8 7 200px;
+    background: #00ff0c;
+}
+
+.products {
+    background: #ffcfaa;
+}
+
+.footer {
+    background: #0aafaa;
+}
+
+#hide {
+    background-color: #000000;
+    color: #fcfcfc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
